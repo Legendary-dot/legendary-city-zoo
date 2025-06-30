@@ -2,7 +2,14 @@ body{
     padding    : 0;
     margin     : 0;
     font-family: Helvetica;
+    min-height: 100%;
+    box-sizing: border-box;
 }
+
+html {
+    min-height: 100%;
+    overflow: auto;
+  }
 
 /*============= HEADER ===========*/
 #header{
@@ -11,15 +18,15 @@ body{
      left    : 0;
      z-index : 500;
      width   :100%;
-     height  :80px;
+     height  :100px;
      background-image  : url('images/wood-bg.png');
      background-repeat: repeat-x;
 }
 
 #header img{
      display: block;
-     margin : auto;
-     height : 70%;
+     margin-top: auto;
+     height : 80%;
      padding-top: 15px;
 }
 
@@ -27,11 +34,11 @@ body{
 
 #tabs-top{
     position: fixed;
-    top: 80px;
+    top: 100px;
     left: 0%;
     z-index: 500;
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: darkgreen;
 }
 
@@ -39,18 +46,22 @@ body{
     float: left;
     display: block;
     width: 33%;
-    height: 35px;
+    height: 100px;
     font-weight: 700;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 12px;
+    padding-top: 20px;
 }
 
 /*============= MAIN-HOME ===========*/
 
 #main-home{
-    margin-top: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 100%;
+    margin-bottom: auto;
 }
 
 /*============= BOTTOM-TABS ===========*/
@@ -61,7 +72,7 @@ body{
     left: 0%;
     z-index: 500;
     width: 100%;
-    height: 40px;
+    height: 100px;
     background-color: forestgreen;
 }
 
@@ -69,12 +80,12 @@ body{
     float: left;
     display: block;
     width: 50%;
-    height: 35px;
+    height: 3000px;
     font-weight: 700;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding-top: 12px;
+    padding-top: 50px;
 }
 
 /*============= MAIN ===========*/
